@@ -1,34 +1,35 @@
 {
-  "name": "just-tech-news",
+  "name": "hacker-news-clone",
   "version": "1.0.0",
-  "description": "",
+  "description": "Live site: https://secure-bayou-21929.herokuapp.com/",
   "main": "server.js",
   "scripts": {
-    "start": "node server.js",
-    "test": "jest"
+    "test": "jest",
+    "seeds": "node seeds/index.js",
+    "start": "node server.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "bcrypt": "^4.0.1",
+    "connect-session-sequelize": "^6.1.1",
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1",
+    "express-handlebars": "^3.1.0",
+    "express-session": "^1.17.0",
+    "handlebars": "^4.7.3",
+    "mysql2": "^2.1.0",
+    "sequelize": "^5.21.5"
+  },
+  "devDependencies": {
+    "jest": "^25.1.0"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/reinholz36/just-tech-news.git"
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
   "bugs": {
     "url": "https://github.com/reinholz36/just-tech-news/issues"
   },
-  "homepage": "https://github.com/reinholz36/just-tech-news#readme",
-  "dependencies": {
-    "bcrypt": "^5.0.1",
-    "connect-session-sequelize": "^7.1.2",
-    "dotenv": "^16.0.0",
-    "express": "^4.17.2",
-    "express-handlebars": "^6.0.2",
-    "express-session": "^1.17.2",
-    "mysql2": "^2.3.3",
-    "sequelize": "^6.15.1"
-  },
-  "devDependencies": {
-    "jest": "^27.5.1"
-  }
+  "homepage": "https://github.com/reinholz36/just-tech-news#readme"
 }
